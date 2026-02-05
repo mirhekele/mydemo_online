@@ -10,6 +10,11 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+  base: process.env.NODE_ENV === 'production' ? '/demoonline/' : '/',
+  build:{
+    outDir: 'dist',
+    assetsDir: 'assets'
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
