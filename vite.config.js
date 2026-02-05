@@ -10,7 +10,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
-  base: process.env.NODE_ENV === 'production' ? '/' : '/',
+  base: './',
   build:{
     outDir: 'dist',
     assetsDir: 'assets'
